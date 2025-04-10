@@ -78,7 +78,7 @@ export default function HomePage() {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
               alt="GitHub"
-              className="w-4 h-4"
+              className="w-5 h-5 inline-block max-w-[20px]"
             />
           </a>
           <a
@@ -90,7 +90,7 @@ export default function HomePage() {
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
               alt="LinkedIn"
-              className="w-4 h-4"
+              className="w-5 h-5 inline-block max-w-[20px]"
             />
           </a>
         </div>
