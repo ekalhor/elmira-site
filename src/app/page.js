@@ -68,12 +68,30 @@ export default function HomePage() {
         <p className="text-gray-700 mb-2">
           Email: <a href="mailto:elmira.kalhor@gmail.com" className="text-blue-600 underline">elmira.kalhor@gmail.com</a>
         </p>
-        <div className="flex justify-center space-x-4 mt-4">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-6 h-6" />
+        <div className="flex justify-center space-x-6 mt-4">
+          <a
+            href="https://github.com/ekalhor"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              className="w-4 h-4"
+            />
           </a>
-          <a href="https://www.linkedin.com/in/elmira-kalhor" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-6 h-6" />
+          <a
+            href="https://www.linkedin.com/in/elmira-kalhor"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn"
+              className="w-4 h-4"
+            />
           </a>
         </div>
       </section>
