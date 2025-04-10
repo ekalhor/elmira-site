@@ -1,103 +1,86 @@
+'use client';
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="min-h-screen bg-white text-gray-900 p-6">
+      <section className="max-w-3xl mx-auto text-center mt-16">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/IMG_1032.JPG"
+          alt="Elmira Kalhor"
+          width={160}
+          height={160}
+          className="rounded-full mx-auto mb-6"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <h1 className="text-4xl font-bold mb-2">Elmira Kalhor</h1>
+        <p className="text-lg text-gray-600 mb-8">
+          Economist & Engineer | Data-Driven Research | Resilience, Equity, and Innovation
+        </p>
+        <a
+          href="/ElmiraKalhor_R.docx"
+          className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          download
+        >
+          Download CV
+        </a>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+      <section id="about" className="max-w-3xl mx-auto mb-16 mt-20">
+        <h2 className="text-2xl font-semibold mb-4">About</h2>
+        <p className="text-gray-700">
+          I’m a researcher with dual PhDs in Economics and Civil Engineering. My work spans policy, infrastructure, disaster resilience,
+          and social equity—drawing from both data science and systems thinking. Previously at Princeton, I’ve led data-intensive
+          projects using GIS, IMPLAN, and machine learning.
+        </p>
+      </section>
+
+      <section id="experience" className="max-w-3xl mx-auto mb-16">
+        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Postdoctoral Researcher, Princeton University (2019–2022)</li>
+          <li>Doctoral Researcher – Economics, University of New Mexico (2016–2019)</li>
+          <li>Doctoral Researcher – Engineering, University of New Mexico (2012–2017)</li>
+        </ul>
+      </section>
+
+      <section id="projects" className="max-w-3xl mx-auto mb-16">
+        <h2 className="text-2xl font-semibold mb-4">Projects & Publications</h2>
+        <p className="text-gray-700 mb-2">
+          - Disaster Displacement Modeling using Cellphone and Census Data (Princeton)
+        </p>
+        <p className="text-gray-700 mb-2">
+          - Wildfire Risk Assessment and Investment Modeling (UNM)
+        </p>
+        <p className="text-gray-700 mb-2">
+          - <a href="https://doi.org/10.1016/j.autcon.2011.08.014" className="text-blue-600 underline" target="_blank">Stochastic time–cost optimization using non-dominated archiving ant colony approach</a>, Automation in Construction (2011)
+        </p>
+      </section>
+
+      <section id="blog" className="max-w-3xl mx-auto mb-16">
+        <h2 className="text-2xl font-semibold mb-4">Blog</h2>
+        <p className="text-gray-700">
+          Coming soon – reflections on data-driven decision-making, equity, and innovation.
+        </p>
+      </section>
+
+      <section id="contact" className="max-w-3xl mx-auto mb-16">
+        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <p className="text-gray-700 mb-2">
+          Email: <a href="mailto:elmira.kalhor@gmail.com" className="text-blue-600 underline">elmira.kalhor@gmail.com</a>
+        </p>
+        <div className="flex justify-center space-x-4 mt-4">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-6 h-6" />
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          <a href="https://www.linkedin.com/in/elmira-kalhor" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-6 h-6" />
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      <footer className="text-center text-gray-400 text-sm mt-20">
+        © {new Date().getFullYear()} Elmira Kalhor
       </footer>
-    </div>
+    </main>
   );
 }
