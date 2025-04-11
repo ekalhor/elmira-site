@@ -2,7 +2,7 @@
 
 export default function HomePage() {
   return (
-    <main className="h-screen bg-yellow-100 flex justify-center items-center">
+    <main className="h-screen bg-yellow-100 flex items-center justify-center">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/300px-PNG_transparency_demonstration_1.png"
         alt="Test image"
