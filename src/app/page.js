@@ -93,12 +93,4 @@ export default function HomePage() {
           >
             <Linkedin className="w-5 h-5" />
           </a>
-        </div>
-      </section>
-
-      <footer className="text-center text-zinc-400 text-sm mt-20">
-        © {new Date().getFullYear()} Elmira Kalhor
-      </footer>
-    </main>
-  );
-}
+        </d
