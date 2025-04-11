@@ -1,18 +1,14 @@
-'use client';
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+'use client';'use client';
 
 export default function HomePage() {
   return (
-    <main className={`min-h-screen bg-red-100 flex items-center justify-center ${inter.variable}`}>
-      <Image
-        src="/IMG_1032.JPG"
-        alt="Elmira Kalhor"
-        width={320}
-        height={320}
+    <main className="min-h-screen bg-blue-100 flex items-center justify-center">
+      <img
+        src="https://placekitten.com/300/300"
+        alt="Test kitten"
         className="rounded-full shadow-md"
+        width={300}
+        height={300}
       />
     </main>
   );
