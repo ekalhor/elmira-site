@@ -9,13 +9,13 @@ export default function HomePage() {
   return (
     <main className={`min-h-screen bg-white text-zinc-800 font-sans leading-relaxed p-6 ${inter.variable}`}>
       <section className="max-w-3xl mx-auto text-center mt-16">
-        <div className="w-full flex justify-center">
+        <div className="block text-center">
           <Image
             src="/IMG_1032.JPG"
             alt="Elmira Kalhor"
             width={320}
             height={320}
-            className="rounded-full shadow-md"
+            className="rounded-full shadow-md inline-block"
           />
         </div>
         <h1 className="text-5xl font-semibold mb-3 tracking-tight mt-6">Elmira Kalhor</h1>
