@@ -1,10 +1,13 @@
 'use client';
 import Image from "next/image";
 import { Github, Linkedin } from 'lucide-react';
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white text-zinc-800 font-serif leading-relaxed p-6">
+    <main className={`min-h-screen bg-white text-zinc-800 font-sans leading-relaxed p-6 ${inter.variable}`}>
       <section className="max-w-3xl mx-auto text-center mt-16">
         <div className="flex justify-center">
           <Image
@@ -94,4 +97,8 @@ export default function HomePage() {
       </section>
 
       <footer className="text-center text-zinc-400 text-sm mt-20">
-        © {new Date().getFullYe
+        © {new Date().getFullYear()} Elmira Kalhor
+      </footer>
+    </main>
+  );
+}
