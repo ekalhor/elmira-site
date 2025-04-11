@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <main className={`min-h-screen bg-white text-zinc-800 font-sans leading-relaxed px-6 ${inter.variable}`}>
 
-      {/* Centered photo at top */}
-      <section className="w-full flex justify-center mt-12 mb-10">
+      {/* Profile Photo */}
+      <section className="w-full flex justify-center mt-16 mb-8">
         <Image
           src="/IMG_1032.JPG"
           alt="Elmira Kalhor"
@@ -20,8 +20,8 @@ export default function HomePage() {
         />
       </section>
 
-      {/* Name and title */}
-      <section className="max-w-2xl mx-auto text-center mb-12">
+      {/* Name and Title */}
+      <section className="max-w-2xl mx-auto text-center mb-10">
         <h1 className="text-5xl font-semibold mb-3">Elmira Kalhor</h1>
         <p className="text-xl text-zinc-600">Quantitative Research Scientist</p>
       </section>
@@ -38,7 +38,7 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="max-w-2xl mx-auto mb-20 px-2">
+      <section id="about" className="max-w-2xl mx-auto mb-20">
         <h2 className="text-3xl font-bold mb-4">About</h2>
         <p className="text-lg text-zinc-700 text-justify">
           Data-driven researcher with dual PhDs in Economics and Engineering, specializing in data science, analytics, and policy evaluation.
@@ -49,7 +49,7 @@ export default function HomePage() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="max-w-2xl mx-auto mb-20 px-2">
+      <section id="experience" className="max-w-2xl mx-auto mb-20">
         <h2 className="text-3xl font-bold mb-4">Experience</h2>
         <ul className="list-disc list-inside text-lg text-zinc-700 space-y-2">
           <li>Postdoctoral Researcher, Princeton University (2019–2022)</li>
@@ -59,13 +59,13 @@ export default function HomePage() {
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="max-w-2xl mx-auto mb-20 px-2">
+      <section id="blog" className="max-w-2xl mx-auto text-center mb-20">
         <h2 className="text-3xl font-bold mb-4">Blog</h2>
         <p className="text-lg text-zinc-700 italic">Coming soon</p>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="max-w-2xl mx-auto mb-20 text-center px-2">
+      <section id="contact" className="max-w-2xl mx-auto text-center mb-20">
         <p className="text-lg text-zinc-700 mb-8">Contact me at elmiraDOTkalhorATgmailDOTcom</p>
         <div className="flex justify-center space-x-6">
           <a
@@ -75,7 +75,7 @@ export default function HomePage() {
             aria-label="GitHub"
             className="text-zinc-600 hover:text-blue-700"
           >
-            <Github className="w-5 h-5" />
+            <Github className="w-6 h-6" />
           </a>
           <a
             href="https://www.linkedin.com/in/elmira-kalhor"
@@ -84,7 +84,7 @@ export default function HomePage() {
             aria-label="LinkedIn"
             className="text-zinc-600 hover:text-blue-700"
           >
-            <Linkedin className="w-5 h-5" />
+            <Linkedin className="w-6 h-6" />
           </a>
         </div>
       </section>
