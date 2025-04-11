@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import { Github, Linkedin } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -74,24 +75,18 @@ export default function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
+            className="text-gray-700 hover:text-blue-600"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              alt="GitHub"
-              className="w-5 h-5 inline-block max-w-[20px]"
-            />
+            <Github className="w-5 h-5" />
           </a>
           <a
             href="https://www.linkedin.com/in/elmira-kalhor"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
+            className="text-gray-700 hover:text-blue-600"
           >
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-              alt="LinkedIn"
-              className="w-5 h-5 inline-block max-w-[20px]"
-            />
+            <Linkedin className="w-5 h-5" />
           </a>
         </div>
       </section>
