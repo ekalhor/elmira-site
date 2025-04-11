@@ -6,14 +6,16 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-zinc-800 font-serif leading-relaxed p-6">
       <section className="max-w-3xl mx-auto text-center mt-16">
-        <Image
-          src="/IMG_1032.JPG"
-          alt="Elmira Kalhor"
-          width={160}
-          height={160}
-          className="rounded-full mx-auto mb-6 shadow-md"
-        />
-        <h1 className="text-5xl font-semibold mb-3 tracking-tight">Elmira Kalhor</h1>
+        <div className="flex justify-center">
+          <Image
+            src="/IMG_1032.JPG"
+            alt="Elmira Kalhor"
+            width={320}
+            height={320}
+            className="rounded-full shadow-md"
+          />
+        </div>
+        <h1 className="text-5xl font-semibold mb-3 tracking-tight mt-6">Elmira Kalhor</h1>
         <p className="text-xl text-zinc-600 mb-8 italic">
           Economist & Engineer | Data-Driven Research | Resilience, Equity, and Innovation
         </p>
@@ -92,8 +94,4 @@ export default function HomePage() {
       </section>
 
       <footer className="text-center text-zinc-400 text-sm mt-20">
-        © {new Date().getFullYear()} Elmira Kalhor
-      </footer>
-    </main>
-  );
-}
+        © {new Date().getFullYe
