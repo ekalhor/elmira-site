@@ -8,19 +8,18 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export default function HomePage() {
   return (
     <main className={`min-h-screen bg-white text-zinc-800 font-sans leading-relaxed p-6 ${inter.variable}`}>
-      <section className="max-w-3xl mx-auto text-center mt-16">
-        <div className="w-full flex justify-center items-center">
-          <div className="w-[320px]">
-            <Image
-              src="/IMG_1032.JPG"
-              alt="Elmira Kalhor"
-              width={320}
-              height={320}
-              className="rounded-full shadow-md"
-            />
-          </div>
-        </div>
-        <h1 className="text-5xl font-semibold mb-3 tracking-tight mt-6">Elmira Kalhor</h1>
+      <section className="w-full flex justify-center mt-16">
+        <Image
+          src="/IMG_1032.JPG"
+          alt="Elmira Kalhor"
+          width={320}
+          height={320}
+          className="rounded-full shadow-md"
+        />
+      </section>
+
+      <section className="max-w-3xl mx-auto text-center mt-10">
+        <h1 className="text-5xl font-semibold mb-3 tracking-tight">Elmira Kalhor</h1>
         <p className="text-xl text-zinc-600 mb-8 italic">
           Economist & Engineer | Data-Driven Research | Resilience, Equity, and Innovation
         </p>
